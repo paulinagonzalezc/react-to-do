@@ -1,4 +1,6 @@
 import React from 'react';
+import TodosList from './TodosList';
+import Header from './Header';
 
 class TodoContainer extends React.Component {
 state = {
@@ -21,14 +23,27 @@ state = {
   ],
 };
 
+handleChange = id => {
+  this.setState(prevState => ({
+    todos: prevState.todos.map(todo => {
+      if (todo.id === id) {
+        return {
+        ...todo,
+        completed: !todo.completed,
+        }
+      }
+      return todo;
+    }),
+  }));
+};
+
 render() {
   return (
-    <ul>
-      {this.state.todos.map(todo => (
-        <li>{todo.title}</li>
-      ))}
-    </ul>
-  );
+    <div>
+      <Header />
+      <TodosList todos={this.state.todos} handleChangeProps={this.handleChange} />
+    </div>
+  )
 }
 }
 
