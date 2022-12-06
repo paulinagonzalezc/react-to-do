@@ -63,9 +63,23 @@ addTodoItem = (title) => {
   });
 };
 
+setUpdate = (updatedTitle, id) => {
+  this.setState((prevState) => ({
+    todos: prevState.todos.map((todo) => {
+      if (todo.id === id) {
+        return {
+          ...todo,
+          title: updatedTitle,
+        };
+      }
+      return todo;
+    }),
+  }));
+}
+
 render() {
   const {
-    state, handleChange, delTodo, addTodoItem,
+    state, handleChange, delTodo, addTodoItem, setUpdate,
   } = this;
   return (
     <div className="container">
@@ -76,6 +90,7 @@ render() {
           todos={state.todos}
           handleChangeProps={handleChange}
           deleteTodoProps={delTodo}
+          setUpdate={setUpdate}
         />
       </div>
     </div>
