@@ -58,7 +58,7 @@ In this exercise, I consolidated my knowledge about React, components, props, st
 
 Not yet deployed
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [React To do App](https://paulinagonzalezc.github.io/react-to-do/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -122,8 +122,8 @@ To run tests, run the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Dynamic Navbar**
-- [ ] **Navigation through pages**
+- [ ] **More styling**
+- [ ] **Animations**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
