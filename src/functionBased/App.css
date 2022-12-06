@@ -63,3 +63,19 @@ body {
   outline: none;
   border: none;
 }
+
+.active-link {
+  color: orangered;
+  text-decoration: underline;
+}
+
+.about__content {
+  padding: 8rem 40px;
+  display: flex;
+}
+
+.about__list {
+  list-style: none;
+  flex: 2;
+  margin-right: 15px;
+}
