@@ -7,7 +7,7 @@ import './functionBased/App.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Router>
+    <Router basename="/react-to-do">
       <TodoContainer />
     </Router>
   </React.StrictMode>,
