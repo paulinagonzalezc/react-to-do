@@ -22,9 +22,13 @@ const SinglePage = () => {
   const { title, description } = aboutContent;
 
   return (
-    <div>
-      <h1>{title}</h1>
-      <p>{description}</p>
+    <div className="container">
+      <div className="inner">
+        <div className="main__content">
+          <h1>{title}</h1>
+          <p>{description}</p>
+        </div>
+      </div>
     </div>
   );
 };
